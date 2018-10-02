@@ -1,22 +1,43 @@
 # IoTFlow
 
-> IoT Data Flow Programing
+![Logo](https://github.com/jerosoler/IoTFlow/blob/master/static/logo.png)
 
-## Build Setup
+
+## Instalación
+
 
 ``` bash
-# install dependencies
-$ npm install
+sudo apt-get install libpcap-dev
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+git clone https://github.com/jerosoler/IoTFlow.git
 
-# build for production and launch server
-$ npm run build
-$ npm start
+cd IoTFlow
 
-# generate static project
-$ npm run generate
+npm install --force
+
+sudo HOST=192.168.1.9 PORT=3000 npm run build  ## Cambia la IP
+
+sudo HOST=192.168.1.9 PORT=3000 npm run start  ## Cambia la IP
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+## Configuración
+### Paso 1
+Configura tus placas
+
+![Image boards](https://github.com/jerosoler/IoTFlow/blob/master/docs/boards.png)
+
+### Paso 2
+Crea tu flujo
+
+![Image Flow](https://github.com/jerosoler/IoTFlow/blob/master/docs/flow.png)
+
+### Paso 3
+Play!! ;)
+
+![IoTFlow](https://github.com/jerosoler/IoTFlow/blob/master/docs/IoTFlow.png)
+
+
+## Developers 
+``` bash
+sudo HOST=192.168.1.9 PORT=3000 npm run dev  ## Cambia la IP
+```
