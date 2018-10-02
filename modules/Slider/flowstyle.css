@@ -1,0 +1,78 @@
+.node.slider {
+  background: rgba(7, 107, 0, 0.8) !important;
+  display: flex;
+  border: 2px solid  rgba(7, 107, 0, 1) !important;
+  padding-bottom: 0px !important;;
+}
+.node.slider.selected {
+  background: #ffd92c !important;
+  border-color: #e3c000 !important;
+}
+/*
+.node.slider:after {
+  content: '';
+
+  background-size: 90%;
+  background-position: center;
+  width: 39px;
+  height: 39px;
+  border-left: 2px solid #4e58bf;
+}*/
+
+
+
+.node.slider .socket {
+  position: absolute;
+  right: 0px;
+}
+
+.node.slider input[type=text] {
+  width: inherit;
+}
+
+.node.slider .el-input-number--small {
+  width: 100px;
+}
+/*
+.node.slider input[type=number] {
+  width: 65px;
+} */
+
+.node.slider .title {
+  display:none;
+}
+.node.slider .output .output-title {
+  display: none;
+}
+
+.node.slider .control:nth-child(2) {
+  order: -1;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.node.slider .control:nth-child(6) {
+  order:-1;
+  background: white;
+  width: 50px;
+  padding-top: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 0px;
+  border-right: 2px solid  rgba(7, 107, 0, 1) ;
+}
+.node.slider.selected .control:nth-child(6) {
+    border-right: 2px solid   #e3c000;
+}
+
+.node.slider .control:nth-child(4), .node.slider .control:nth-child(5) {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.node.slider .control:nth-child(3)  input {
+  width: 120px;
+}
+
+.node.slider .control:nth-child(3) {
+  padding-right: 5px;
+}

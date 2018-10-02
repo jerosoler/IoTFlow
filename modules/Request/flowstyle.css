@@ -1,0 +1,65 @@
+.node.request {
+  display: flex;
+  width: 250px;
+  background: rgba(113,33,111, 0.8) !important;
+  border: 2px solid  rgba(113,33,111, 1) !important;
+  padding-bottom: 0px !important;
+}
+
+.node.request.selected {
+  background: #ffd92c !important;
+  border-color: #e3c000 !important;
+}
+
+.node.request .title {
+  display:none;
+
+}
+
+.node.request .input .input-title, .node.request .output .output-title {
+  display:none;
+}
+
+
+.node.request.selected {
+    background: #ffd92c;
+    border-color: #e3c000;
+}
+
+.node.request .socket.input.string {
+  position: absolute;
+  left: 0px;
+}
+
+.node.request .socket.output.string  {
+  position: absolute;
+  right: 0px;
+}
+
+.node.request .control:nth-child(4) {
+position: relative;
+left: 50px;
+}
+
+.node.request .control:nth-child(3) {
+  position:absolute;
+  background: white;
+  width: 60px;
+  color: #854a83;
+  left: 0px;
+  border-right: 2px solid  rgba(113,33,111, 1) ;
+}
+
+
+.node.request.selected .control:nth-child(3) {
+  border-right: 2px solid #e3c000;
+}
+.node.request .control:nth-child(5) {
+  position:absolute;
+  right: 0px;
+}
+
+
+.node.request input[type=text] {
+  width: 140px;
+}

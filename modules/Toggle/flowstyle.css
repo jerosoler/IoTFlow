@@ -1,0 +1,54 @@
+.node.toggle {
+  background: rgba(7, 107, 0, 0.8) !important;
+  display: flex;
+  border: 2px solid  rgba(7, 107, 0, 1) !important;
+  padding-bottom: 0px !important;;
+}
+.node.toggle.selected {
+  background: #ffd92c !important;
+  border-color: #e3c000 !important;
+}
+
+
+
+.node.toggle .socket {
+  position: absolute;
+  right: 0px;
+}
+
+.node.toggle input {
+  width: 120px;
+}
+
+.node.toggle .title {
+  display: none;
+}
+
+.node.toggle .output .output-title {
+  display: none;
+}
+
+
+.node.toggle.selected {
+    background: #ffd92c;
+    border-color: #e3c000;
+}
+
+.node.toggle .control:nth-child(4) {
+  order: -1;
+  background: white;
+  width: 76px;
+  padding-top: 8px;
+  padding-left: 4px;
+  padding-right: 2px;
+  padding-bottom: 0px;
+  border-right: 2px solid  rgba(7, 107, 0, 1) ;
+}
+
+.node.toggle.selected .control:nth-child(4) {
+    border-right: 2px solid   #e3c000;
+}
+
+.node.toggle .control:nth-child(5) {
+    padding-left: 0px;
+}

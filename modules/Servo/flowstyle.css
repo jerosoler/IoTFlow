@@ -1,0 +1,55 @@
+.node.servo {
+  display: flex;
+  padding-bottom: 0px !important;
+  padding-left: 12px;
+  min-width: 70px;
+}
+
+.node.servo .title {
+  line-height: 28px;
+  display:none;
+}
+
+.node.servo:after {
+  content: '';
+  background: url('../../modules/Servo/icon.jpeg') no-repeat white;
+  background-size: 90%;
+  background-position: center;
+  width: 44px;
+  height: 44px;
+  border-left: 2px solid #4e58bf;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.node.servo.selected:after {
+    border-left: 2px solid   #e3c000;
+}
+
+
+.node.servo .socket {
+  position: absolute;
+  left: 0px;
+}
+
+.node.servo input {
+  width: 100px;
+}
+
+.node.servo .input-title {
+  display: none !important;
+}
+
+.node.servo .control:nth-child(2) {
+  order: -1;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.node.servo .control:nth-child(3) {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.node.servo .control:nth-child(4) {
+  padding-right: 5px;
+  padding-left: 5px;
+}

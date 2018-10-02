@@ -1,0 +1,56 @@
+.node.led {
+  display: flex;
+  padding-bottom: 0px !important;
+  padding-left: 12px;
+  min-width: 70px;
+}
+
+.node.led .title {
+  line-height: 28px;
+  display:none;
+}
+
+.node.led:after {
+  content: '';
+  /*background: url('~/assets/img/icon.svg') no-repeat #757575;*/
+  background: url('../../modules/Led/icon.svg') no-repeat white;
+  background-size: 90%;
+  background-position: center;
+  width: 44px;
+  height: 44px;
+  border-left: 2px solid #4e58bf;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.node.led.selected:after {
+    border-left: 2px solid   #e3c000;
+}
+
+
+.node.led .socket {
+  position: absolute;
+  left: 0px;
+}
+
+.node.led input {
+  width: 100px;
+}
+
+.node.led .input-title {
+  display: none !important;
+}
+
+.node.led .control:nth-child(2) {
+  order: -1;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.node.led .control:nth-child(3) {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.node.led .control:nth-child(4) {
+  padding-right: 5px;
+  padding-left: 5px;
+}

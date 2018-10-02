@@ -1,0 +1,66 @@
+.node.delay {
+  display: flex;
+  width: 250px;
+  background: rgba(243,151,14, 0.8) !important;
+
+  border: 2px solid  rgba(243,151,14, 1) !important;
+  padding-bottom: 0px !important;
+}
+
+.node.delay.selected {
+  background: #ffd92c !important;
+  border-color: #e3c000 !important;
+}
+
+.node.delay .title {
+  display:none;
+
+}
+
+.node.delay .input .input-title, .node.delay .output .output-title {
+  display:none;
+}
+
+
+.node.delay.selected {
+    background: #ffd92c;
+    border-color: #e3c000;
+}
+
+.node.delay .socket.input.string {
+  position: absolute;
+  left: 0px;
+}
+
+.node.delay .socket.output.string  {
+  position: absolute;
+  right: 0px;
+}
+
+.node.delay .control:nth-child(4) {
+position: relative;
+left: 50px;
+}
+
+.node.delay .control:nth-child(3) {
+  position:absolute;
+  background: white;
+  width: 60px;
+  color: #f5ab3e;
+  left: 0px;
+  border-right: 2px solid rgba(243,151,14, 1);
+}
+
+
+.node.delay.selected .control:nth-child(3) {
+  border-right: 2px solid #e3c000;
+}
+.node.delay .control:nth-child(5) {
+  position:absolute;
+  right: 0px;
+}
+
+
+.node.delay input[type=text] {
+  width: inherit;
+}

@@ -1,0 +1,64 @@
+.node.buttonpress {
+  background: rgba(7, 107, 0, 0.8) !important;
+  display: flex;
+  border: 2px solid  rgba(7, 107, 0, 1) !important;
+  padding-bottom: 0px !important;;
+}
+.node.buttonpress.selected {
+  background: #ffd92c !important;
+  border-color: #e3c000 !important;
+}
+
+
+.node.buttonpress .title {
+  line-height: 28px;
+}
+
+.node.buttonpress:hover {
+    background: rgba(7, 107, 0, 1);
+}
+
+.node.buttonpress.selected:before {
+    border-right: 2px solid   #e3c000;
+}
+
+
+.node.buttonpress .socket {
+  position: absolute;
+  right: 0px;
+}
+
+.node.buttonpress input {
+  width: 120px;
+}
+
+
+
+.node.buttonpress .output .output-title, .node.buttonpress .title {
+  display: none !important;
+}
+
+
+.node.buttonpress.selected {
+    background: #ffd92c;
+    border-color: #e3c000;
+}
+
+
+.node.buttonpress .control:nth-child(4) {
+  padding-left: 0px;
+}
+
+.node.buttonpress .control:nth-child(5) {
+  order: -1;
+  background: #ffffff;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 12px;
+  padding-bottom: 0px;
+  border-right: 2px solid  rgba(7, 107, 0, 1) ;
+}
+
+.node.buttonpress.selected .control:nth-child(5) {
+    border-right: 2px solid   #e3c000;
+}

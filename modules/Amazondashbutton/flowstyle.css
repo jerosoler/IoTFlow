@@ -1,0 +1,54 @@
+.node.amazondashbutton {
+
+  display: flex;
+
+  padding-bottom: 0px !important;;
+}
+.node.amazondashbutton.selected {
+  background: #ffd92c !important;
+  border-color: #e3c000 !important;
+}
+
+
+.node.amazondashbutton:before {
+  content: '';
+  /*background: url('~/assets/img/icon.svg') no-repeat #757575;*/
+  background: url('../../modules/Amazondashbutton/icon.jpg') no-repeat #fff;
+  background-size: 90%;
+  background-position: center;
+  width: 44px;
+  height: 44px;
+  border-right: 2px solid #4e58bf;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.node.amazondashbutton.selected:before {
+    border-right: 2px solid  #e3c000;
+}
+
+
+.node.amazondashbutton .socket {
+  position: absolute;
+  right: 0px;
+}
+
+.node.amazondashbutton input {
+  width: 150px;
+}
+
+.node.amazondashbutton .title {
+  display: none;
+}
+
+.node.amazondashbutton .output .output-title {
+  display: none;
+}
+
+
+.node.amazondashbutton.selected {
+    background: #ffd92c;
+    border-color: #e3c000;
+}
+.node.amazondashbutton .control:nth-child(4) {
+  padding-left: 5px;
+}

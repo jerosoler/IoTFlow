@@ -1,0 +1,65 @@
+.node.ledrgb {
+  display: flex;
+  padding-bottom: 0px !important;
+  padding-left: 12px;
+  min-width: 70px;
+}
+
+.node.ledrgb .title {
+  line-height: 28px;
+  display:none;
+}
+
+.node.ledrgb:after {
+  content: '';
+  /*background: url('~/assets/img/icon.svg') no-repeat #757575;*/
+  background: url('../../modules/Ledrgb/icon.svg') no-repeat white;
+  background-size: 90%;
+  background-position: center;
+  width: 44px;
+  height: 44px;
+  border-left: 2px solid #4e58bf;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.node.ledrgb.selected:after {
+    border-left: 2px solid   #e3c000;
+}
+
+
+.node.ledrgb .socket {
+  position: absolute;
+  left: 0px;
+}
+
+.node.ledrgb input {
+  width: 100px;
+}
+
+.node.ledrgb .input-title {
+  display: none !important;
+}
+
+.node.ledrgb .control:nth-child(2) {
+  order: -1;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.node.ledrgb .control:nth-child(3) {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.node.ledrgb .control:nth-child(4) {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.node.ledrgb .control:nth-child(5) {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.node.ledrgb .control:nth-child(6) {
+  padding-right: 5px;
+  padding-left: 5px;
+}

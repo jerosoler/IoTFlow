@@ -1,0 +1,64 @@
+.node.buttonio {
+  background: rgba(7, 107, 0, 0.8) !important;
+  display: flex;
+  border: 2px solid  rgba(7, 107, 0, 1) !important;
+  padding-bottom: 0px !important;;
+}
+.node.buttonio.selected {
+  background: #ffd92c !important;
+  border-color: #e3c000 !important;
+}
+
+
+.node.buttonio .title {
+  line-height: 28px;
+}
+
+.node.buttonio:hover {
+    background: rgba(7, 107, 0, 1);
+}
+
+.node.buttonio.selected:before {
+    border-right: 2px solid   #e3c000;
+}
+
+
+.node.buttonio .socket {
+  position: absolute;
+  right: 0px;
+}
+
+.node.buttonio input {
+  width: 120px;
+}
+
+
+
+.node.buttonio .output .output-title, .node.buttonio .title {
+  display: none !important;
+}
+
+
+.node.buttonio.selected {
+    background: #ffd92c;
+    border-color: #e3c000;
+}
+
+
+.node.buttonio .control:nth-child(4) {
+  padding-left: 0px;
+}
+
+.node.buttonio .control:nth-child(5) {
+  order: -1;
+  background: #ffffff;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 12px;
+  padding-bottom: 0px;
+  border-right: 2px solid  rgba(7, 107, 0, 1) ;
+}
+
+.node.buttonio.selected .control:nth-child(5) {
+    border-right: 2px solid   #e3c000;
+}

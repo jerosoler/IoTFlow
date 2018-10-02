@@ -1,0 +1,67 @@
+.node.read {
+  background: rgba(7, 107, 0, 0.8) !important;
+  display: flex;
+  border: 2px solid  rgba(7, 107, 0, 1) !important;
+  padding-bottom: 0px !important;;
+}
+.node.read.selected {
+  background: #ffd92c !important;
+  border-color: #e3c000 !important;
+}
+
+.node.read {
+  display: flex;
+  padding-bottom: 0px !important;
+  padding-left: 12px;
+  min-width: 70px;
+}
+
+.node.read .title {
+  line-height: 28px;
+  display:none;
+}
+
+.node.read:after {
+  content: '';
+  /*background: url('~/assets/img/icon.svg') no-repeat #757575;*/
+  background: url('../../modules/Read/icon.svg') no-repeat white;
+  background-size: 90%;
+  background-position: center;
+  width: 44px;
+  height: 44px;
+  border-left: 2px solid #4e58bf;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.node.read.selected:after {
+    border-left: 2px solid   #e3c000;
+}
+
+
+.node.read .socket {
+  position: absolute;
+  left: 0px;
+}
+
+.node.read input {
+  width: 100px;
+}
+
+.node.read .input-title {
+  display: none !important;
+}
+
+.node.read .control:nth-child(2) {
+  order: -1;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.node.read .control:nth-child(3) {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.node.read .control:nth-child(4) {
+  padding-right: 5px;
+  padding-left: 5px;
+}

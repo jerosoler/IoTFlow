@@ -1,0 +1,51 @@
+.node.colorpicker {
+  background: rgba(7, 107, 0, 0.8) !important;
+  display: flex;
+  border: 2px solid  rgba(7, 107, 0, 1) !important;
+  padding-bottom: 0px !important;;
+}
+.node.colorpicker.selected {
+  background: #ffd92c !important;
+  border-color: #e3c000 !important;
+}
+
+
+
+.node.colorpicker .socket {
+  position: absolute;
+  right: 0px;
+}
+
+.node.colorpicker input {
+  width: 120px;
+}
+
+
+
+.node.colorpicker .output-title, .node.colorpicker .title  {
+  display: none !important;
+}
+
+
+.node.colorpicker.selected {
+    background: #ffd92c;
+    border-color: #e3c000;
+}
+
+.node.colorpicker.selected .control:nth-child(5) {
+    border-right: 2px solid   #e3c000;
+}
+
+
+.node.colorpicker .control:nth-child(4) {
+  padding-left: 0px;
+}
+
+.node.colorpicker .control:nth-child(5) {
+  order: -1;
+  background: #ffffff;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 0px;
+  border-right: 2px solid  rgba(7, 107, 0, 1) ;
+}

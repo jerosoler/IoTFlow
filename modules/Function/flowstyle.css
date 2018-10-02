@@ -1,0 +1,55 @@
+.node.function {
+  width: 300px;
+  background: rgba(113,33,111, 0.8) !important;
+
+  border: 2px solid  rgba(113,33,111, 1) !important;
+}
+
+.node.function.selected {
+  background: #ffd92c !important;
+  border-color: #e3c000 !important;
+}
+
+.node.function .title {
+      margin-left: 10px;
+}
+
+.node.function textarea {
+  border-radius: 4px;
+  width: 100% !important;
+  height: 80px !important;
+  display:none;
+}
+
+.node.function .input .input-title, .node.function .output .output-title {
+  display:none;
+}
+
+
+.node.function.selected {
+    background: #ffd92c;
+    border-color: #e3c000;
+}
+.node.function.selected textarea {
+  display: block;
+}
+.node.function .socket.input.string, .node.function .socket.output.string {
+position: absolute;
+    top: 0px;
+  }
+
+.node.function .socket.output.string  {
+  right: 0px;
+}
+.node.function .control:nth-child(3) {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.node.function .control:nth-child(4) {
+  display:none;
+}
+.node.function.selected .control:nth-child(4) {
+  display: block;
+}

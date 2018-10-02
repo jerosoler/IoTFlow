@@ -1,0 +1,58 @@
+.node.inputtext {
+  background: rgba(7, 107, 0, 0.8) !important;
+  display: flex;
+  border: 2px solid  rgba(7, 107, 0, 1) !important;
+  padding-bottom: 0px !important;;
+}
+.node.inputtext.selected {
+  background: #ffd92c !important;
+  border-color: #e3c000 !important;
+}
+
+
+
+.node.inputtext .socket {
+  position: absolute;
+  right: 0px;
+}
+
+.node.inputtext input {
+  width: 120px;
+}
+
+.node.inputtext .title {
+  display: none;
+}
+
+.node.inputtext .output .output-title {
+  display: none;
+}
+
+
+.node.inputtext.selected {
+    background: #ffd92c;
+    border-color: #e3c000;
+}
+
+.node.inputtext .control:nth-child(4) {
+  order: -1;
+  background: white;
+  width: 60px;
+  padding-top: 8px;
+  padding-left: 4px;
+  padding-right: 2px;
+  padding-bottom: 0px;
+  border-right: 2px solid  rgba(7, 107, 0, 1) ;
+}
+
+.node.inputtext .control:nth-child(4)  input {
+  width: 50px;
+}
+
+.node.inputtext.selected .control:nth-child(4) {
+    border-right: 2px solid   #e3c000;
+}
+
+.node.inputtext .control:nth-child(5) {
+    padding-left: 0px;
+}

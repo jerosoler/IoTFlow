@@ -1,0 +1,98 @@
+.node.cron {
+  display: flex;
+  width: 310px;
+  background: rgba(243,151,14, 0.8) !important;
+
+  border: 2px solid  rgba(243,151,14, 1) !important;
+  padding-bottom: 0px !important;
+}
+
+.node.cron.selected {
+  background: #ffd92c !important;
+  border-color: #e3c000 !important;
+}
+
+.node.cron .title {
+  display:none;
+
+}
+
+.node.cron .input .input-title, .node.cron .output .output-title {
+  display:none;
+}
+
+
+.node.cron.selected {
+    background: #ffd92c;
+    border-color: #e3c000;
+}
+
+.node.cron .socket.input.string {
+  position: absolute;
+  left: 0px;
+}
+
+.node.cron .socket.output.string  {
+  position: absolute;
+  right: 0px;
+}
+
+.node.cron .control:nth-child(4) {
+position: relative;
+left: 65px;
+}
+
+.node.cron .control:nth-child(5) {
+position: relative;
+left: 65px;
+}
+
+.node.cron .control:nth-child(6) {
+position: relative;
+left: 65px;
+}
+
+.node.cron .control:nth-child(7) {
+position: relative;
+left: 65px;
+}
+
+.node.cron .control:nth-child(8) {
+position: relative;
+left: 65px;
+}
+
+.node.cron .control:nth-child(9) {
+position: relative;
+left: 65px;
+}
+
+.node.cron .control:nth-child(3) {
+  position:absolute;
+  background: white;
+  width: 60px;
+  color: #f5ab3e;
+  left: 0px;
+  border-right: 2px solid rgba(243,151,14, 1);
+}
+
+
+.node.cron.selected .control:nth-child(3) {
+  border-right: 2px solid #e3c000;
+}
+
+.node.cron .control:nth-child(4), .node.cron .control:nth-child(5), .node.cron .control:nth-child(6), .node.cron .control:nth-child(7), .node.cron .control:nth-child(8), .node.cron .control:nth-child(9) {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.node.cron .control:nth-child(10) {
+  position:absolute;
+  right: 0px;
+}
+
+
+.node.cron input[type=text] {
+  width: 30px;
+  text-align: center;
+}
