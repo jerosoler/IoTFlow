@@ -22,6 +22,7 @@
     "firmata": "^0.19.1",
     "fs": "0.0.1-security",
     "johnny-five": "^0.15.0",
+    "mosca": "^2.8.3",
     "node-cron": "^2.0.1",
     "node-dash-button": "^0.6.1",
     "nuxt": "^1.0.0",

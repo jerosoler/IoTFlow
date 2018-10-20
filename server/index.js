@@ -84,6 +84,16 @@ router.post('/saveflow', function(req, res, next) {
   const request = require('request');
   const io = require('socket.io-client');
   const socket = io('https://` + host + `:` + port+`', {rejectUnauthorized: false});
+  var mosca = require('mosca');
+
+  var settingsmosca = {
+    port: 1883,
+  };
+  var moscaserver = new mosca.Server(settingsmosca);
+
+  moscaserver.on('ready', function() {
+  console.log('Mosca server is up and running');
+  });
 
   `;
   for(var i=0; i < boardslist.length; i++ ){
