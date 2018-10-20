@@ -1,0 +1,66 @@
+.node.mqttsend {
+  display: flex;
+  width: 350px;
+  background: rgba(113,33,111, 0.8) !important;
+  border: 2px solid  rgba(113,33,111, 1) !important;
+  padding-bottom: 0px !important;
+}
+
+.node.mqttsend.selected {
+  background: #ffd92c !important;
+  border-color: #e3c000 !important;
+}
+
+.node.mqttsend .title {
+  display:none;
+
+}
+
+.node.mqttsend .input .input-title, .node.mqttsend .output .output-title {
+  display:none;
+}
+
+
+.node.mqttsend.selected {
+    background: #ffd92c;
+    border-color: #e3c000;
+}
+
+.node.mqttsend .socket.input.string {
+  position: absolute;
+  left: 0px;
+}
+
+
+.node.mqttsend .control:nth-child(2) {
+  padding-right: 5px;
+}
+.node.mqttsend .control:nth-child(3) {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.node.mqttsend .control:nth-child(4) {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.node.mqttsend .control:nth-child(5) {
+  position:absolute;
+  background: white;
+  width: 60px;
+  color: #854a83;
+  right: 0px;
+  border-left: 2px solid  rgba(113,33,111, 1) ;
+}
+
+.node.mqttsend.selected .control:nth-child(5) {
+  border-left: 2px solid #e3c000;
+}
+
+.node.mqttsend input[type=text]:nth-child(1) {
+  width: 140px;
+}
+.node.mqttsend .control:nth-child(4) input[type=text] {
+  width: 80px;
+}
