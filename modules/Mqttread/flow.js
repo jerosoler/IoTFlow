@@ -2,32 +2,32 @@
 var strSocket = require('~/assets/js/flows/strsockets.js').strSocket;
 var TextControl = require('~/assets/js/flows/TextControlVue.js').default;
 var InfoControl = require('~/assets/js/flows/InfoControl.js').default;
-var MqttsendControl = require('~/modules/Mqttsend/MqttsendControl.js').default;
+var MqttreadControl = require('~/modules/Mqttread/MqttreadControl.js').default;
 
 
 var info = `
 <b>Input</b><br>
 - None<br>
+<b>Output</b><br>
+- Payload<br>
 `;
 
-export default  class MqttsendComponent extends Rete.Component {
+export default  class MqttreadComponent extends Rete.Component {
   constructor(){
-      super("Mqttsend");
-      this.elementname = 'mqtt Send';
+      super("Mqttread");
+      this.elementname = 'mqtt Read';
       this.elementtype = 'Functions'; // Functions
       this.elementcolor = '#8d4d8b';
-      this.elementinput = true;
-      this.elementoutput = false;
+      this.elementinput = false;
+      this.elementoutput = true;
   }
   builder(node) {
 
     return node
-    .addControl(new InfoControl(info, 'mqtt Send', node.id))
-    .addInput(new Rete.Input("Name", "input",  strSocket, true))
+    .addControl(new MqttreadControl())
     .addControl(new TextControl(this.editor, 'msg', false, "text","Topic"))
-    .addControl(new TextControl(this.editor, 'msg2', false, "text","Payload"))
-    .addControl(new MqttsendControl());
-
+    .addControl(new InfoControl(info, 'mqtt Read', node.id))
+    .addOutput(new Rete.Output("Name",'output', strSocket));
 
   }
 

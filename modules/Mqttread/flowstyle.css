@@ -1,0 +1,65 @@
+.node.mqttread {
+  display: flex;
+  width: 250px;
+  background: rgba(113,33,111, 0.8) !important;
+  border: 2px solid  rgba(113,33,111, 1) !important;
+  padding-bottom: 0px !important;
+}
+
+.node.mqttread.selected {
+  background: #ffd92c !important;
+  border-color: #e3c000 !important;
+}
+
+.node.mqttread .title {
+  display:none;
+
+}
+
+.node.mqttread .input .input-title, .node.mqttread .output .output-title {
+  display:none;
+}
+
+
+.node.mqttread.selected {
+    background: #ffd92c;
+    border-color: #e3c000;
+}
+
+.node.mqttread .socket.input.string {
+  position: absolute;
+  left: 0px;
+}
+
+.node.mqttread .socket.output.string  {
+  position: absolute;
+  right: 0px;
+}
+
+.node.mqttread .control:nth-child(4) {
+position: relative;
+left: 50px;
+}
+
+.node.mqttread .control:nth-child(3) {
+  position:absolute;
+  background: white;
+  width: 60px;
+  color: #854a83;
+  left: 0px;
+  border-right: 2px solid  rgba(113,33,111, 1) ;
+}
+
+
+.node.mqttread.selected .control:nth-child(3) {
+  border-right: 2px solid #e3c000;
+}
+.node.mqttread .control:nth-child(5) {
+  position:absolute;
+  right: 0px;
+}
+
+
+.node.mqttread input[type=text] {
+  width: 140px;
+}
