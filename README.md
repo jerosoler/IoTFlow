@@ -66,7 +66,6 @@ Firmata:
 * Sensor
 
 Functions:
-* Mqtt
 * Telegram
 * Otras (Socket, email, iftt, assistant, exec command...)
 
