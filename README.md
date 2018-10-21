@@ -20,6 +20,11 @@ npm install --force
 sudo HOST=192.168.1.9 PORT=3000 npm run build  ## Cambia la IP
 
 sudo HOST=192.168.1.9 PORT=3000 npm run start  ## Cambia la IP
+
+### OR PM2
+
+sudo HOST=192.168.1.9 PORT=3000 pm2 start npm --name="IoTFLow" -- start
+
 ```
 
 ## Configuración
