@@ -50,6 +50,9 @@ Play!! ;)
 
 ![IoTFlow](https://github.com/jerosoler/IoTFlow/blob/master/docs/IoTFlow.png)
 
+## MQTT Server
+Incopora un servidor MQTT en el puerto 1883. Sin usuario y contraseña.
+
 ## Furutas implementaciones:
 Dashboard: 
 * Joystick
