@@ -10,14 +10,12 @@
 </template>
 
 <script>
-var values = require('./../files/boards.json').boards;
 export default {
   props: ['readonly', 'emitter', 'ikey', 'type', 'placeholder', 'that'],
   data() {
       return {
-        values,
+        values: '',
         value: ''
-
       }
   },
   methods: {
@@ -25,11 +23,21 @@ export default {
           if (this.ikey)
             this.that.putData(this.ikey, this.value)
             this.that.emitter.trigger('process');
+      },
+      async refreshlist () {
+          var boards = await fetch('listboards')
+          .then(function(response) { return response.json(); })
+          .then(function(data) {
+            return data;
+          })
+          this.values = boards
       }
-    },
-    mounted() {
-      this.value = this.that.getData(this.ikey);
-    }
+
+  },
+  mounted() {
+    this.refreshlist();
+    this.value = this.that.getData(this.ikey);
+  }
 }
 
 
