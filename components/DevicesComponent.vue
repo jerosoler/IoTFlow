@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <el-input class="searchdevices" placeholder="Search" v-model="input" suffix-icon="el-icon-search" ></el-input>
+    <el-input class="searchdevices" placeholder="Search" v-model="input" suffix-icon="el-icon-search" clearable></el-input>
     <div v-for="(dato, index) in categories" :key="index">
       <el-collapse   v-model="activeName" class="devices" >
         <el-collapse-item :title="dato" class="deviceslist" :name="index">
