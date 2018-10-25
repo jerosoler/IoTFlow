@@ -352,6 +352,17 @@ export default {
   overflow-x: hidden;
 
 }
+
+@media (max-width: 767px) {
+  #column {
+    display:none;
+  }
+  .right {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+
+}
 .container {
   padding: 0px;
 }
