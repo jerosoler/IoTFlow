@@ -1,8 +1,9 @@
-# IoTFlow
+# IoTFlow [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/neonious/lowjs/blob/master/LICENSE)
+<p align="center">
+  <img src="https://github.com/jerosoler/IoTFlow/blob/master/static/logo.png">
+</p>
 
-![Logo](https://github.com/jerosoler/IoTFlow/blob/master/static/logo.png)
 ## Ejemplo
-
 [![](http://img.youtube.com/vi/U8ZKvRl_Wt8/0.jpg)](http://www.youtube.com/watch?v=U8ZKvRl_Wt8 "IoTFlow - Ejemplo led")
 
 ## Instalación
