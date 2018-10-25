@@ -17,7 +17,8 @@
 .node.function textarea {
   border-radius: 4px;
   width: 100% !important;
-  height: 80px !important;
+  height: 80px;
+  min-height: 80px;
   display:none;
 }
 

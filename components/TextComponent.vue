@@ -1,6 +1,7 @@
 <template>
+  <div @mousedown="stop">
   <div v-if="type === 'text'">
-  <el-input v-model="value"  @change="update()" :placeholder="placeholder" size="small"></el-input>
+  <el-input v-model="value"  @change="update()" :placeholder="placeholder" size="small" ></el-input>
   </div>
   <div v-else-if="type === 'number'">
       <el-input-number class="number" v-model="value"  controls-position="right" @change="update()"  size="small"></el-input-number>
@@ -16,7 +17,8 @@
    </el-select>
   </div>
   <div v-else-if="type === 'textarea'">
-    <el-input type="textarea" v-model="value"  @change="update()" :placeholder="placeholder" ></el-input>
+    <el-input type="textarea" :autosize="{ minRows: 5}" @change="update()" :placeholder="placeholder"  v-model="value"></el-input>
+  </div>
   </div>
 </template>
 
@@ -194,6 +196,9 @@ export default {
           if (this.ikey)
             this.that.putData(this.ikey, this.value)
             this.that.emitter.trigger('process');
+      },
+      stop(e){
+        e.stopPropagation();
       }
     },
     mounted() {
