@@ -1,8 +1,9 @@
 <template>
   <section class="container">
+    <div class="rete home">
     <div v-for="(data, index) in datos.Home.data.nodes" :key="index" >
-      <div v-if="modulesavaible.indexOf(data.name) > -1">
-        <component :is="data.name" :title="data.data.msg" :dataid="data.id" :datos="data.data"></component>
+      <div v-if="modulesavaible.indexOf(data.name) > -1"  >
+        <component :is="data.name" :title="data.data.msg" :dataid="data.id" :datos="data.data" class="linea"></component>
       </div>
     </div>
 
@@ -12,12 +13,13 @@
       <el-collapse-item  v-for="(data, index) in datos" v-if="index != 'Home'" :key="index" :title="index" :name="index">
           <div v-for="(data, index) in data.data.nodes" :key="index" >
             <div v-if="modulesavaible.indexOf(data.name) > -1">
-              <component :is="data.name" :title="data.data.msg" :dataid="data.id" :datos="data.data"></component>
+              <component :is="data.name" :title="data.data.msg" :dataid="data.id" :datos="data.data" class="linea"></component>
             </div>
         </div>
       </el-collapse-item>
     </el-collapse>
     <voice></voice>
+    </div>
   </section>
 </template>
 
@@ -98,16 +100,23 @@ export default {
 
 <style scoped>
 .container {
-  font-size: 12px;
+  font-size: 1rem;
 }
 .el-collapse {
       overflow: hidden;
 }
 .el-collapse-item {
-  text-indent: 15px;
+  text-indent: 25px;
 }
 .el-collapse-item div {
   text-indent: 0px;
 }
+.linea {
+  padding-left: 25px !important;
+  border-bottom: 1px solid rgba(230, 230, 230, 0.5);
+  min-height: 50px;
+  line-height: 30px;
+  width: 100%;
 
+}
 </style>

@@ -20,7 +20,7 @@
 
 <style scoped>
 .slider {
-  margin: 10px;
+  padding: 10px;
   display: inline-block;
   float:left;
   width: 100%;
@@ -28,7 +28,7 @@
 .el-slider{
   float:right;
   width: 25%;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 

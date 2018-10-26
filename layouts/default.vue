@@ -116,10 +116,23 @@ padding: 10px;
   /*clear:both;
   overflow: initial;*/
 }
+.rete.home .el-collapse-item__header {
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.2rem;
+}
 .rete .el-collapse-item [role=tabpanel] {
   width: 100%;
 }
-
+.rete.home .el-collapse-item__arrow {
+  top: 0px;
+}
+.rete.home {
+  font-size: 1rem;
+}
+.rete.home .el-collapse-item__content {
+  font-size: 1rem;
+}
 .rete .el-collapse-item__arrow {
   position: relative;
   height: 20px;
@@ -131,6 +144,10 @@ padding: 10px;
 .rete .el-collapse-item__arrow:before {
   position:relative;
   top:0px;
+}
+.rete.home .el-collapse-item__arrow.is-active:before {
+  top: -16px;
+  left: 2px;
 }
 .rete .el-collapse-item__arrow.is-active:before {
   position:relative;
