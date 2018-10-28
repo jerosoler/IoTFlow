@@ -10,10 +10,10 @@
 
             <div class="draggable" draggable="true" @dragstart="onDrag" :data="data.name">
               <div v-if="data.elementinput">
-                <div class="input"></div>
+                <div class="input">{{data.elementinputnum}}</div>
               </div>
               <div v-if="data.elementoutput">
-                <div class="output"></div>
+                <div class="output">{{data.elementoutputnum}}</div>
               </div>
               <div class="element"  :style="{ background: data.elementcolor }" >
                 <div class="name">{{data.elementname}}</div>
@@ -158,6 +158,11 @@ export default {
   border:2px solid black;
   left: 2px;
   top: 10px;
+  color: black;
+  font-size: 9px;
+  text-align: left;
+  text-indent: 3px;
+  line-height: 12px;
 }
 .output {
   width: 15px;
@@ -170,6 +175,11 @@ export default {
   border:2px solid black;
   right: 2px;
   top: 10px;
+  color: black;
+  font-size: 9px;
+  text-align: left;
+  text-indent: 3px;
+  line-height: 12px;
 }
 .el-collapse-item {
   text-indent: 15px;

@@ -1,0 +1,71 @@
+.node.ifelse {
+  display: flex;
+  width: 250px;
+  background: rgba(113,33,111, 0.8) !important;
+  border: 2px solid  rgba(113,33,111, 1) !important;
+  padding-bottom: 0px !important;
+}
+
+.node.ifelse.selected {
+  background: #ffd92c !important;
+  border-color: #e3c000 !important;
+}
+
+.node.ifelse .title {
+  display:none;
+
+}
+
+.node.ifelse .input .input-title, .node.ifelse .output .output-title {
+  display:none;
+}
+
+
+.node.ifelse.selected {
+    background: #ffd92c;
+    border-color: #e3c000;
+}
+
+.node.ifelse .socket.input.string {
+  position: absolute;
+  left: 0px;
+}
+
+.node.ifelse .socket.output.string  {
+  position: absolute;
+  right: 0px;
+  top: -15px;
+}
+.node.ifelse .output:nth-child(3) .socket.output.string {
+  position: absolute;
+  right:0px;
+  top: 25px;
+}
+
+.node.ifelse .control:nth-child(5) {
+position: relative;
+left: 50px;
+}
+
+.node.ifelse .control:nth-child(4) {
+  position:absolute;
+  background: white;
+  width: 60px;
+  color: #854a83;
+  left: 0px;
+  border-right: 2px solid  rgba(113,33,111, 1) ;
+}
+
+
+.node.ifelse.selected .control:nth-child(4) {
+  border-right: 2px solid #e3c000;
+}
+.node.ifelse .control:nth-child(6) {
+  position:absolute;
+  right: 0px;
+}
+
+
+.node.ifelse input[type=text] {
+  width: 140px;
+}
