@@ -76,7 +76,7 @@ Firmata:
 
 Functions:
 * Telegram
-* Otras (Socket, email, iftt, assistant, exec command...)
+* Otras (Socket, email, iftt, assistant ...)
 
 
 ## Developers 
@@ -85,3 +85,6 @@ sudo HOST=192.168.1.9 PORT=3000 npm run dev  ## Cambia la IP
 ```
 
 Crea tus modulos siguiendo los ejemplos de la carpeta "modules"
+
+## Donaciones 
+Con una :star2: es suficiente para continuar con el proyecto
