@@ -15,10 +15,19 @@
               <div v-if="data.elementoutput">
                 <div class="output">{{data.elementoutputnum}}</div>
               </div>
-              <div class="element"  :style="{ background: data.elementcolor }" >
+              <el-popover
+              placement="right"
+              :title="data.elementname"
+              trigger="hover"
+              >
+              <div v-html="data.info"></div>
+              <div  slot="reference" class="element"  :style="{ background: data.elementcolor }" >
                 <div class="name">{{data.elementname}}</div>
               </div>
+              </el-popover>
             </div>
+
+
           </div>
         </div>
       </el-collapse-item>

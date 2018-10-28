@@ -23,6 +23,7 @@ export default class LedComponent extends Rete.Component {
     this.elementcolor = '#8b9fff';
     this.elementinput = true;
     this.elementoutput = false;
+    this.info = info;
   }
   builder(node){
     return node.addControl(new InfoControl(info, 'Led', node.id)).addInput(new Rete.Input("String", "Led",  strSocket, true)).addControl(new TextControl(this.editor, 'msg', false, 'pin', "PIN"))

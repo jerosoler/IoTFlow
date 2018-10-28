@@ -17,6 +17,7 @@ export default  class AmazondashbuttonComponent extends Rete.Component {
       this.elementcolor = '#8b9fff';
       this.elementinput = false;
       this.elementoutput = true;
+      this.info = info;
 
   }
   builder(node) {

@@ -29,6 +29,7 @@ export default  class CronComponent extends Rete.Component {
       this.elementcolor = '#f5ab3e';
       this.elementinput = true;
       this.elementoutput = true;
+      this.info = info;
   }
   builder(node) {
 

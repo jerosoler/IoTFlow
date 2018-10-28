@@ -20,6 +20,7 @@ export default  class RequestComponent extends Rete.Component {
       this.elementcolor = '#8d4d8b';
       this.elementinput = true;
       this.elementoutput = true;
+      this.info = info;
   }
   builder(node) {
 

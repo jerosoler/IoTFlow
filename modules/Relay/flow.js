@@ -23,6 +23,7 @@ export default class RelayComponent extends Rete.Component {
     this.elementcolor = '#8b9fff';
     this.elementinput = true;
     this.elementoutput = false;
+    this.info = info;
   }
   builder(node){
     return node

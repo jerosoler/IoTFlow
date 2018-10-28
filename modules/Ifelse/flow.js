@@ -23,6 +23,7 @@ export default  class IfelseComponent extends Rete.Component {
       this.elementinput = true;
       this.elementoutput = true;
       this.elementoutputnum = 2;
+      this.info = info;
   }
   builder(node) {
 

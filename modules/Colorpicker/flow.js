@@ -19,6 +19,7 @@ export default  class ColorpickerComponent extends Rete.Component {
       this.elementcolor = '#378132';
       this.elementinput = false;
       this.elementoutput = true;
+      this.info = info;
   }
   builder(node) {
     return node

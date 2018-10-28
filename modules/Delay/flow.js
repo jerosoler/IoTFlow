@@ -21,6 +21,7 @@ export default  class DelayComponent extends Rete.Component {
       this.elementcolor = '#f5ab3e';
       this.elementinput = true;
       this.elementoutput = true;
+      this.info = info;
   }
   builder(node) {
 

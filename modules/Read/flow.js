@@ -18,6 +18,7 @@ export default class ReadComponent extends Rete.Component {
     this.elementcolor = '#378132';
     this.elementinput = true;
     this.elementoutput = false;
+    this.info = info;
   }
   builder(node){
     return node
