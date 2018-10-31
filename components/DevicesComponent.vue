@@ -19,6 +19,7 @@
               placement="right"
               :title="data.elementname"
               trigger="hover"
+              open-delay="1000"
               >
               <div v-html="data.info"></div>
               <div  slot="reference" class="element"  :style="{ background: data.elementcolor }" >
