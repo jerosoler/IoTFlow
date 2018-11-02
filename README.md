@@ -30,7 +30,7 @@ sudo HOST=192.168.1.9 PORT=3000 pm2 start npm --name="IoTFLow" -- start
 
 ## Configuración
 ### Paso 1
-Carga StandarFirmata o StandardFirmataWifi a tus dispositivos.
+Carga StandardFirmata o StandardFirmataWifi a tus dispositivos.
 Testeado con:
 * Arduino UNO (StandardFirmata)
 * NodeMCU (StandardFirmataWifi)
@@ -54,7 +54,7 @@ Play!! ;)
 ## MQTT Server
 Incopora un servidor MQTT en el puerto 1883. Sin usuario y contraseña.
 
-## Furutas implementaciones:
+## Futuras implementaciones:
 Dashboard: 
 * Joystick
 * up/down
