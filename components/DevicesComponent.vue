@@ -19,7 +19,7 @@
               placement="right"
               :title="data.elementname"
               trigger="hover"
-              open-delay="1000"
+              :open-delay="delay"
               >
               <div v-html="data.info"></div>
               <div  slot="reference" class="element"  :style="{ background: data.elementcolor }" >
@@ -56,6 +56,7 @@ export default {
         activeName: [],
         activeName2: [],
         input: '',
+        delay: 1000,
         componentssearch: []
       }
   },

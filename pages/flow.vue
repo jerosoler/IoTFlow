@@ -9,7 +9,7 @@
     <div class="right">
     <div al-app id="modules">
        <div v-for="(data, index) in modules" :key="index" >
-         <div style="width: 100%; height: 100%; padding: 10px; padding-left: 20px; padding-right: 20px;" class="openmodules"  @click="openModule(index)">
+         <div style="width: 100%; height: 100%; padding: 10px; padding-left: 20px; padding-right: 20px;" class="openmodules"  @click="openModule(index, $event)">
          <div>{{ index }}</div>
 
         </div>
@@ -165,13 +165,14 @@ export default {
         this.modules = test;
         this.form.name = '';
     },
-    async openModule(name) {
+    async openModule(name, event) {
       //console.log(event);
       var x = document.getElementsByClassName("openmodules");
       for (var i = 0; i < x.length; i++) {
 
         x[i].style.background = "white";
       }
+
       if(event.target.className == "openmodules") {
         event.target.style.background = "#8b9fff";
       } else {
