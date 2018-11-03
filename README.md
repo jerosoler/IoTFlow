@@ -55,7 +55,7 @@ Play!! ;)
 Incopora un servidor MQTT en el puerto 1883. Sin usuario y contraseña.
 
 ## Futuras implementaciones:
-Dashboard: 
+Dashboard:
 * Joystick
 * up/down
 * Video view
@@ -64,10 +64,7 @@ Dashboard:
 
 Firmata:
 * LCD
-* Light
-* Motion
 * Piezo
-* Proximiti
 * Thermometer
 * Button
 * Switch
@@ -79,12 +76,12 @@ Functions:
 * Otras (Socket, email, iftt, assistant ...)
 
 
-## Developers 
+## Developers
 ``` bash
 sudo HOST=192.168.1.9 PORT=3000 npm run dev  ## Cambia la IP
 ```
 
 Crea tus modulos siguiendo los ejemplos de la carpeta "modules"
 
-## Donaciones 
+## Donaciones
 Con una :star2: es suficiente para continuar con el proyecto
