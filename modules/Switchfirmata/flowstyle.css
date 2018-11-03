@@ -1,0 +1,82 @@
+.node.switchfirmata {
+
+  display: flex;
+
+  padding-bottom: 0px !important;;
+}
+.node.switchfirmata.selected {
+  background: #ffd92c !important;
+  border-color: #e3c000 !important;
+}
+
+
+.node.switchfirmata:before {
+  content: '';
+  /*background: url('~/assets/img/icon.svg') no-repeat #757575;*/
+  background: url('../../modules/Switchfirmata/icon.jpg') no-repeat #fff;
+  background-size: 90%;
+  background-position: center;
+  width: 44px;
+  height: 44px;
+  border-right: 2px solid #4e58bf;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.node.switchfirmata.selected:before {
+    border-right: 2px solid  #e3c000;
+}
+.node.switchfirmata .socket.input {
+  position: absolute;
+  left: 0px;
+}
+
+.node.switchfirmata .socket.output {
+  position: absolute;
+  right: 0px;
+}
+
+.node.switchfirmata input {
+  width: 100px;
+}
+
+.node.switchfirmata .title {
+  display: none;
+}
+
+.node.switchfirmata .output .output-title {
+  display: none;
+}
+
+
+.node.switchfirmata.selected {
+    background: #ffd92c;
+    border-color: #e3c000;
+}
+.node.switchfirmata .control:nth-child(4) {
+  padding-right: 5px;
+
+}
+
+.node.switchfirmata .control:nth-child(5) {
+  padding-left: 5px;
+}
+
+.node.switchfirmata .control:nth-child(6) {
+  padding-left: 0px;
+}
+
+.node.switchfirmata .control:nth-child(3) {
+  padding-left: 0px;
+  order: 5;
+}
+
+.node.switchfirmata .socket.output.string  {
+  position: absolute;
+  right: 0px;
+  top: -15px;
+}
+.node.switchfirmata .output:nth-child(3) .socket.output.string {
+  position: absolute;
+  right:0px;
+  top: 25px;
+}
