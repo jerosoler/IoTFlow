@@ -16,7 +16,7 @@ var info = `
 <a target="_blanck" href="http://johnny-five.io/api/proximity/">More info</a>
 `;
 
-export default class PinreadComponent extends Rete.Component {
+export default class ProximityComponent extends Rete.Component {
   constructor(){
     super("Proximity");
     this.elementname = 'Proximity';

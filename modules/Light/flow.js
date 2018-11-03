@@ -12,7 +12,7 @@ var info = `
 <a target="_blanck" href="http://johnny-five.io/api/light/">More info</a>
 `;
 
-export default class PinreadComponent extends Rete.Component {
+export default class LightComponent extends Rete.Component {
   constructor(){
     super("Light");
     this.elementname = 'Light';

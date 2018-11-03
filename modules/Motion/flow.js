@@ -14,7 +14,7 @@ var info = `
 <a target="_blanck" href="http://johnny-five.io/api/motion/">More info</a>
 `;
 
-export default class PinreadComponent extends Rete.Component {
+export default class MotionComponent extends Rete.Component {
   constructor(){
     super("Motion");
     this.elementname = 'Motion';
