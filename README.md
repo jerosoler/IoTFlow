@@ -66,7 +66,6 @@ Firmata:
 * LCD
 * Piezo
 * Thermometer
-* Button
 * Switch
 * Joystick
 * Sensor
