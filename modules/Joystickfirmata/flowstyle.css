@@ -1,0 +1,85 @@
+.node.joystickfirmata {
+
+  display: flex;
+
+  padding-bottom: 0px !important;;
+}
+.node.joystickfirmata.selected {
+  background: #ffd92c !important;
+  border-color: #e3c000 !important;
+}
+
+
+.node.joystickfirmata:before {
+  content: '';
+  /*background: url('~/assets/img/icon.svg') no-repeat #757575;*/
+  background: url('../../modules/Joystickfirmata/icon.svg') no-repeat #fff;
+  background-size: 90%;
+  background-position: center;
+  width: 44px;
+  height: 44px;
+  border-right: 2px solid #4e58bf;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.node.joystickfirmata.selected:before {
+    border-right: 2px solid  #e3c000;
+}
+.node.joystickfirmata .socket.input {
+  position: absolute;
+  left: 0px;
+}
+
+.node.joystickfirmata .socket.output {
+  position: absolute;
+  right: 0px;
+}
+
+.node.joystickfirmata input {
+  width: 100px;
+}
+
+.node.joystickfirmata .title {
+  display: none;
+}
+
+.node.joystickfirmata .output .output-title {
+  display: none;
+}
+
+
+.node.joystickfirmata.selected {
+    background: #ffd92c;
+    border-color: #e3c000;
+}
+.node.joystickfirmata .control:nth-child(4) {
+  padding-right: 5px;
+}
+
+.node.joystickfirmata .control:nth-child(5) {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.node.joystickfirmata .control:nth-child(6) {
+  padding-left: 5px;
+  padding-right: 0px;
+}
+
+
+.node.joystickfirmata .control:nth-child(3) {
+  padding-left: 0px;
+  order: 5;
+
+}
+
+.node.joystickfirmata .socket.output.string  {
+  position: absolute;
+  right: 0px;
+  top: -15px;
+}
+.node.joystickfirmata .output:nth-child(3) .socket.output.string {
+  position: absolute;
+  right:0px;
+  top: 25px;
+}
