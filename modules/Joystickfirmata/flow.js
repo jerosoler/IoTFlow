@@ -9,6 +9,7 @@ var info = `
 - data [From -1 to 1]<br>
 - Output 1 (x)<br>
 - Output 2 (y)<br>
+- For Button use "Button Firmata"<br>
 <b>Connection:</b><br>
 <img src="`+require('~/modules/Joystickfirmata/image.png')+`" width="300px;"><br>
 <a target="_blanck" href="http://johnny-five.io/api/joystick/">More info</a>
