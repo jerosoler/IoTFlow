@@ -64,7 +64,6 @@ Dashboard:
 
 Firmata:
 * LCD
-* Piezo
 * Motor
 * Stepper
 
