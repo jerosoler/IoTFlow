@@ -1,0 +1,67 @@
+.node.sensor {
+
+  display: flex;
+
+  padding-bottom: 0px !important;;
+}
+.node.sensor.selected {
+  background: #ffd92c !important;
+  border-color: #e3c000 !important;
+}
+
+
+.node.sensor:before {
+  content: '';
+  /*background: url('~/assets/img/icon.svg') no-repeat #757575;*/
+  background: url('../../modules/Sensor/icon.svg') no-repeat #fff;
+  background-size: 60%;
+  background-position: center;
+  width: 44px;
+  height: 44px;
+  border-right: 2px solid #4e58bf;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.node.sensor.selected:before {
+    border-right: 2px solid  #e3c000;
+}
+.node.sensor .socket.input {
+  position: absolute;
+  left: 0px;
+}
+
+.node.sensor .socket.output {
+  position: absolute;
+  right: 0px;
+}
+
+.node.sensor input {
+  width: 100px;
+}
+
+.node.sensor .title {
+  display: none;
+}
+
+.node.sensor .output .output-title {
+  display: none;
+}
+
+
+.node.sensor.selected {
+    background: #ffd92c;
+    border-color: #e3c000;
+}
+.node.sensor .control:nth-child(4) {
+  padding-right: 5px;
+}
+
+.node.sensor .control:nth-child(5) {
+  padding-left: 5px;
+}
+
+.node.sensor .control:nth-child(3) {
+  padding-left: 0px;
+  order: 5;
+
+}
