@@ -1,7 +1,7 @@
 <template>
   <div class="button">
         {{ title }}
-        <el-button type="primary"  v-on:mouseover="button(true, dataid)" @mouseup="button(false,dataid)" circle></el-button>
+        <el-button type="primary"  v-on:mouseover="button(true, dataid)" @mouseup="button(false,dataid)" v-on:mouseleave="button(false, dataid)" circle></el-button>
 
   </div>
 </template>
@@ -56,6 +56,9 @@ export default {
       that.button(true);
    });
    this.$el.children[0].addEventListener('mouseup', function(){
+      that.button(false);
+   });
+   this.$el.children[0].addEventListener('mouseleave', function(){
       that.button(false);
    });
    this.$el.children[0].addEventListener('touchend', function(){

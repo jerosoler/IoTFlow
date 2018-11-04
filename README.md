@@ -65,8 +65,8 @@ Dashboard:
 Firmata:
 * LCD
 * Piezo
-* Thermometer
-* Sensor
+* Motor
+* Stepper
 
 Functions:
 * Telegram
