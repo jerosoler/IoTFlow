@@ -61,16 +61,16 @@ router.post('/saveflow', function(req, res, next) {
   //var json = JSON.parse(status);
   fs.writeFile("./files/status.json", JSON.stringify(status),  (err) => { });
 
-  fs.readdirSync('./server/boards', (err, files) => {
-    if (err) throw err;
+  var files = fs.readdirSync('./server/boards');
 
     for (const file of files) {
-
-      fs.unlinkSync(path.join('./server/boards', file), err => {
-        if (err) throw err;
-      });
+      if (file.indexOf('.js')>=0) {
+        fs.unlinkSync(path.join('./server/boards', file), err => {
+          if (err) throw err;
+        });
+      }
     }
-  });
+
 
 
   var boardslist = JSON.parse(fs.readFileSync('./files/boards.json', 'utf8')).boards;
