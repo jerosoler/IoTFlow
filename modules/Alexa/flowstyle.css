@@ -1,0 +1,82 @@
+.node.alexa {
+
+  display: flex;
+
+  padding-bottom: 0px !important;;
+}
+.node.alexa.selected {
+  background: #ffd92c !important;
+  border-color: #e3c000 !important;
+}
+
+
+.node.alexa:before {
+  content: '';
+  /*background: url('~/assets/img/icon.svg') no-repeat #757575;*/
+  background: url('../../modules/Alexa/icon.png') no-repeat #fff;
+  background-size: 90%;
+  background-position: center;
+  width: 44px;
+  height: 44px;
+  border-right: 2px solid #4e58bf;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.node.alexa.selected:before {
+    border-right: 2px solid  #e3c000;
+}
+.node.alexa .socket.input {
+  position: absolute;
+  left: 0px;
+}
+
+.node.alexa .socket.output {
+  position: absolute;
+  right: 0px;
+}
+
+.node.alexa input {
+  width: 100px;
+}
+
+.node.alexa .title {
+  display: none;
+}
+
+.node.alexa .output .output-title {
+  display: none;
+}
+
+
+.node.alexa.selected {
+    background: #ffd92c;
+    border-color: #e3c000;
+}
+.node.alexa .control:nth-child(4) {
+  padding-right: 5px;
+
+}
+
+.node.alexa .control:nth-child(5) {
+  padding-left: 5px;
+}
+
+.node.alexa .control:nth-child(6) {
+  padding-left: 0px;
+}
+
+.node.alexa .control:nth-child(3) {
+  padding-left: 0px;
+  order: 5;
+}
+
+.node.alexa .socket.output.string  {
+  position: absolute;
+  right: 0px;
+  top: -15px;
+}
+.node.alexa .output:nth-child(3) .socket.output.string {
+  position: absolute;
+  right:0px;
+  top: 25px;
+}

@@ -34,6 +34,7 @@
     "serialport": "^6.2.2",
     "socket.io": "^2.1.1",
     "socket.io-client": "^2.1.1",
+    "wemore": "^0.6.0",
     "zip-folder": "^1.0.0"
   },
   "devDependencies": {
