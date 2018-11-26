@@ -4,7 +4,8 @@ exports.load = function(datos, host, port, board) {
   content += `
 
   socket.on('read`+datos.id+`', function(data){
-  if(data == "") {
+  if('`+datos.data.msg2+`' == 'undefined') {
+
     var message = {
     topic: '`+datos.data.msg+`',
     payload: data, // or a Buffer
@@ -12,8 +13,6 @@ exports.load = function(datos, host, port, board) {
     retain: false // or true
     };
   } else {
-
-
     var message = {
     topic: '`+datos.data.msg+`',
     payload: '`+datos.data.msg2+`', // or a Buffer
