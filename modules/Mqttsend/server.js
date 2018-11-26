@@ -4,6 +4,15 @@ exports.load = function(datos, host, port, board) {
   content += `
 
   socket.on('read`+datos.id+`', function(data){
+  if(data == "") {
+    var message = {
+    topic: '`+datos.data.msg+`',
+    payload: '`+data+`', // or a Buffer
+    qos: 0, // 0, 1, or 2
+    retain: false // or true
+    };
+  } else {
+
 
     var message = {
     topic: '`+datos.data.msg+`',
@@ -11,6 +20,7 @@ exports.load = function(datos, host, port, board) {
     qos: 0, // 0, 1, or 2
     retain: false // or true
     };
+  }
     moscaserver.publish(message, function() { });
 
 

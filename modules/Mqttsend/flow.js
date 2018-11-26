@@ -7,7 +7,7 @@ var MqttsendControl = require('~/modules/Mqttsend/MqttsendControl.js').default;
 
 var info = `
 <b>Input</b><br>
-- None<br>
+- NULL pass data or input value<br>
 `;
 
 export default  class MqttsendComponent extends Rete.Component {
