@@ -7,7 +7,7 @@ exports.load = function(datos, host, port, board) {
   if(data == "") {
     var message = {
     topic: '`+datos.data.msg+`',
-    payload: '`+data+`', // or a Buffer
+    payload: data, // or a Buffer
     qos: 0, // 0, 1, or 2
     retain: false // or true
     };
