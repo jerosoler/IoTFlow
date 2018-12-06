@@ -215,7 +215,7 @@ router.post('/saveflow', function(req, res, next) {
         content +=`
         const Raspi = require('raspi-io');
         var board = new five.Board({
-          io: new Raspi()
+          io: new Raspi(),
           repl:false
         });
         `;
