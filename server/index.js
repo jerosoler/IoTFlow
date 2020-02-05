@@ -367,7 +367,7 @@ router.post('/saveboard', function(req, res, next) {
     var json = JSON.parse(data)
      console.log(json);
      json['boards'].push(datos);
-     fs.writeFile("./files/boards.json", JSON.stringify(json))
+     fs.writeFile("./files/boards.json", JSON.stringify(json), (error) => { /* handle error */ })
 
   });
 
@@ -380,7 +380,7 @@ router.post('/saveboard', function(req, res, next) {
       var json = JSON.parse(data);
        console.log(json);
        delete json['boards'].splice(datos, 1);
-       fs.writeFile("./files/boards.json", JSON.stringify(json))
+       fs.writeFile("./files/boards.json", JSON.stringify(json), (error) => { /* handle error */ })
 
     });
 

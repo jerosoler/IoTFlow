@@ -16,7 +16,10 @@ git clone https://github.com/jerosoler/IoTFlow.git
 
 cd IoTFlow
 
-npm install --force
+npm install
+
+### For Raspberry Install raspi-io
+npm install raspi-io
 
 sudo HOST=192.168.1.9 PORT=3000 npm run build  ## Cambia la IP
 
