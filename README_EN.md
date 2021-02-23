@@ -3,12 +3,10 @@
   <img src="https://github.com/jerosoler/IoTFlow/blob/master/static/logo.png">
 </p>
 
-[English version](https://github.com/jerosoler/IoTFlow/blob/master/README_EN.md)
+## Example
+[![](http://img.youtube.com/vi/U8ZKvRl_Wt8/0.jpg)](http://www.youtube.com/watch?v=U8ZKvRl_Wt8 "IoTFlow - Example led")
 
-## Ejemplo
-[![](http://img.youtube.com/vi/U8ZKvRl_Wt8/0.jpg)](http://www.youtube.com/watch?v=U8ZKvRl_Wt8 "IoTFlow - Ejemplo led")
-
-## Instalación
+## Install
 
 
 ``` bash
@@ -33,39 +31,39 @@ sudo HOST=192.168.1.9 PORT=3000 pm2 start npm --name="IoTFLow" -- start
 
 ```
 
-## Configuración
-### Paso 1
-Carga StandardFirmata o StandardFirmataWifi a tus dispositivos.
-Testeado con:
+## Setting
+### Step 1
+Load StandardFirmata or StandardFirmataWifi to your devices.
+Test with:
 * Arduino UNO (StandardFirmata)
 * NodeMCU (StandardFirmataWifi)
-* Si utilizas raspberry para el software, puedes utilizar también los pines GPIO. (No comprobado)
+* If you use raspberry for the software, you can also use the GPIO pins. (Not checked)
 
-### Paso 2
-Configura tus placas
+### Step 2
+Configure your boards
 
 ![Image boards](https://github.com/jerosoler/IoTFlow/blob/master/docs/boards.png)
 
-### Paso 3
-Crea tu flujo
+### Step 3
+Create your flow
 
 ![Image Flow](https://github.com/jerosoler/IoTFlow/blob/master/docs/flow.png)
 
-### Paso 4
+### Step 4
 Play!! ;)
 
 ![IoTFlow](https://github.com/jerosoler/IoTFlow/blob/master/docs/IoTFlow.png)
 
 ## MQTT Server
-Incopora un servidor MQTT en el puerto 1883. Sin usuario y contraseña.
+Incorporates an MQTT server on port 1883. No username and password.
 
-## Futuras implementaciones:
+## Future implementations:
 Dashboard:
 * Joystick
 * up/down
 * Video view
 * Img view
-* Graficas
+* Graphs
 
 Firmata:
 * LCD
@@ -74,15 +72,15 @@ Firmata:
 
 Functions:
 * Telegram
-* Otras (Socket, email, iftt, assistant ...)
+* Others (Socket, email, iftt, assistant ...)
 
 
 ## Developers
 ``` bash
-sudo HOST=192.168.1.9 PORT=3000 npm run dev  ## Cambia la IP
+sudo HOST=192.168.1.9 PORT=3000 npm run dev  ## Change IP
 ```
 
-Crea tus modulos siguiendo los ejemplos de la carpeta "modules"
+Create your modules following the examples in the "modules" folder
 
 ## Donaciones
-Con una :star2: es suficiente para continuar con el proyecto
+With a: star2: it is enough to continue with the project
